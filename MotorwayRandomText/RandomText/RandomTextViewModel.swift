@@ -10,6 +10,7 @@ import Foundation
 class RandomTextViewModel: ObservableObject {
     
     struct Configuration {
+        var characters: [Character] = [Character]("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ")
         var maxCount: Int = 50
     }
     
@@ -26,12 +27,9 @@ class RandomTextViewModel: ObservableObject {
     }
     
     private func generateRandomText() -> String {
-        // https://stackoverflow.com/questions/26845307/generate-random-alphanumeric-string-in-swift
-        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
-//        let regex = #"[A-Za-z0-9 ]"#) // TODO: is regex faster? Use measure (performance test)
         return String(
             (0..<configuration.maxCount).map { _ in
-                letters.randomElement()! // TODO: should we force unwrap?
+                configuration.characters.randomElement() ?? " " // if this fails for some reason, just fill the gap with a space
             }
         )
     }
