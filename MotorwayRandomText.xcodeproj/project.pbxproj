@@ -17,6 +17,8 @@
 		0CC6ABF929A067E30084881F /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6ABF829A067E30084881F /* Strings.swift */; };
 		0CC6ABFB29A09C0B0084881F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6ABFA29A09C0B0084881F /* README.md */; };
 		0CC6ABFE29A09C4A0084881F /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6ABFD29A09C4A0084881F /* words.json */; };
+		0CC6AC0129A09F100084881F /* TextRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6AC0029A09F100084881F /* TextRepository.swift */; };
+		0CC6AC0429A0A0460084881F /* CorporaWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6AC0329A0A0460084881F /* CorporaWords.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		0CC6ABF829A067E30084881F /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		0CC6ABFA29A09C0B0084881F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0CC6ABFD29A09C4A0084881F /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		0CC6AC0029A09F100084881F /* TextRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRepository.swift; sourceTree = "<group>"; };
+		0CC6AC0329A0A0460084881F /* CorporaWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporaWords.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0CC6ABF229A059770084881F /* RandomText */,
+				0CC6ABFF29A09EF70084881F /* Repository */,
 				0CC6ABF729A067D90084881F /* Resources */,
 				0C65067829A04BF600BE48BC /* MotorwayRandomTextApp.swift */,
 				0C65067A29A04BF600BE48BC /* ContentView.swift */,
@@ -136,6 +141,23 @@
 				0CC6ABFD29A09C4A0084881F /* words.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		0CC6ABFF29A09EF70084881F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0CC6AC0229A09FFC0084881F /* Models */,
+				0CC6AC0029A09F100084881F /* TextRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0CC6AC0229A09FFC0084881F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CC6AC0329A0A0460084881F /* CorporaWords.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,9 +264,11 @@
 			files = (
 				0CC6ABF429A059990084881F /* RandomTextView.swift in Sources */,
 				0C65067B29A04BF600BE48BC /* ContentView.swift in Sources */,
+				0CC6AC0129A09F100084881F /* TextRepository.swift in Sources */,
 				0CC6ABF929A067E30084881F /* Strings.swift in Sources */,
 				0CC6ABF629A059A20084881F /* RandomTextViewModel.swift in Sources */,
 				0C65067929A04BF600BE48BC /* MotorwayRandomTextApp.swift in Sources */,
+				0CC6AC0429A0A0460084881F /* CorporaWords.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
