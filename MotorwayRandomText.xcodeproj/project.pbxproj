@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C13C36629A0C028002E7B56 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13C36529A0C028002E7B56 /* Repository.swift */; };
 		0C65067929A04BF600BE48BC /* MotorwayRandomTextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65067829A04BF600BE48BC /* MotorwayRandomTextApp.swift */; };
 		0C65067B29A04BF600BE48BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65067A29A04BF600BE48BC /* ContentView.swift */; };
 		0C65067D29A04BF700BE48BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C65067C29A04BF700BE48BC /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C13C36529A0C028002E7B56 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		0C65067529A04BF600BE48BC /* MotorwayRandomText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotorwayRandomText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C65067829A04BF600BE48BC /* MotorwayRandomTextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorwayRandomTextApp.swift; sourceTree = "<group>"; };
 		0C65067A29A04BF600BE48BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				0CC6AC0229A09FFC0084881F /* Models */,
+				0C13C36529A0C028002E7B56 /* Repository.swift */,
 				0CC6AC0029A09F100084881F /* TextRepository.swift */,
 			);
 			path = Repository;
@@ -276,6 +279,7 @@
 				0CC6ABF429A059990084881F /* RandomTextView.swift in Sources */,
 				0C65067B29A04BF600BE48BC /* ContentView.swift in Sources */,
 				0CC6AC0129A09F100084881F /* TextRepository.swift in Sources */,
+				0C13C36629A0C028002E7B56 /* Repository.swift in Sources */,
 				0CC6ABF929A067E30084881F /* Strings.swift in Sources */,
 				0CC6ABF629A059A20084881F /* RandomTextViewModel.swift in Sources */,
 				0C65067929A04BF600BE48BC /* MotorwayRandomTextApp.swift in Sources */,
