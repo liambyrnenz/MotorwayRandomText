@@ -36,6 +36,7 @@ struct RandomTextView: View {
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(.primary, lineWidth: 2)
                 TextEditor(text: $viewModel.text)
+                    .scrollContentBackground(.hidden)
                     .padding()
             }
             .padding(.top)
@@ -50,7 +51,9 @@ struct RandomTextView: View {
             header
             generateButton
             textArea
-        }.padding(24)
+        }
+        .padding(24)
+        .background(.blue.opacity(0.2))
     }
 }
 
