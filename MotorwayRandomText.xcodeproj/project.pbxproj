@@ -12,19 +12,10 @@
 		0C65067D29A04BF700BE48BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C65067C29A04BF700BE48BC /* Assets.xcassets */; };
 		0C65068129A04BF700BE48BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C65068029A04BF700BE48BC /* Preview Assets.xcassets */; };
 		0C65068B29A04BF700BE48BC /* MotorwayRandomTextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65068A29A04BF700BE48BC /* MotorwayRandomTextTests.swift */; };
-		0C65069529A04BF700BE48BC /* MotorwayRandomTextUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65069429A04BF700BE48BC /* MotorwayRandomTextUITests.swift */; };
-		0C65069729A04BF700BE48BC /* MotorwayRandomTextUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C65069629A04BF700BE48BC /* MotorwayRandomTextUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0C65068729A04BF700BE48BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C65066D29A04BF600BE48BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C65067429A04BF600BE48BC;
-			remoteInfo = MotorwayRandomText;
-		};
-		0C65069129A04BF700BE48BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0C65066D29A04BF600BE48BC /* Project object */;
 			proxyType = 1;
@@ -42,9 +33,6 @@
 		0C65068029A04BF700BE48BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C65068629A04BF700BE48BC /* MotorwayRandomTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorwayRandomTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C65068A29A04BF700BE48BC /* MotorwayRandomTextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorwayRandomTextTests.swift; sourceTree = "<group>"; };
-		0C65069029A04BF700BE48BC /* MotorwayRandomTextUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotorwayRandomTextUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C65069429A04BF700BE48BC /* MotorwayRandomTextUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorwayRandomTextUITests.swift; sourceTree = "<group>"; };
-		0C65069629A04BF700BE48BC /* MotorwayRandomTextUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorwayRandomTextUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +50,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C65068D29A04BF700BE48BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +58,6 @@
 			children = (
 				0C65067729A04BF600BE48BC /* MotorwayRandomText */,
 				0C65068929A04BF700BE48BC /* MotorwayRandomTextTests */,
-				0C65069329A04BF700BE48BC /* MotorwayRandomTextUITests */,
 				0C65067629A04BF600BE48BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +67,6 @@
 			children = (
 				0C65067529A04BF600BE48BC /* MotorwayRandomText.app */,
 				0C65068629A04BF700BE48BC /* MotorwayRandomTextTests.xctest */,
-				0C65069029A04BF700BE48BC /* MotorwayRandomTextUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,15 +97,6 @@
 				0C65068A29A04BF700BE48BC /* MotorwayRandomTextTests.swift */,
 			);
 			path = MotorwayRandomTextTests;
-			sourceTree = "<group>";
-		};
-		0C65069329A04BF700BE48BC /* MotorwayRandomTextUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0C65069429A04BF700BE48BC /* MotorwayRandomTextUITests.swift */,
-				0C65069629A04BF700BE48BC /* MotorwayRandomTextUITestsLaunchTests.swift */,
-			);
-			path = MotorwayRandomTextUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,24 +137,6 @@
 			productReference = 0C65068629A04BF700BE48BC /* MotorwayRandomTextTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0C65068F29A04BF700BE48BC /* MotorwayRandomTextUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0C6506A029A04BF700BE48BC /* Build configuration list for PBXNativeTarget "MotorwayRandomTextUITests" */;
-			buildPhases = (
-				0C65068C29A04BF700BE48BC /* Sources */,
-				0C65068D29A04BF700BE48BC /* Frameworks */,
-				0C65068E29A04BF700BE48BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0C65069229A04BF700BE48BC /* PBXTargetDependency */,
-			);
-			name = MotorwayRandomTextUITests;
-			productName = MotorwayRandomTextUITests;
-			productReference = 0C65069029A04BF700BE48BC /* MotorwayRandomTextUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +151,6 @@
 						CreatedOnToolsVersion = 14.2;
 					};
 					0C65068529A04BF700BE48BC = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 0C65067429A04BF600BE48BC;
-					};
-					0C65068F29A04BF700BE48BC = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 0C65067429A04BF600BE48BC;
 					};
@@ -223,7 +171,6 @@
 			targets = (
 				0C65067429A04BF600BE48BC /* MotorwayRandomText */,
 				0C65068529A04BF700BE48BC /* MotorwayRandomTextTests */,
-				0C65068F29A04BF700BE48BC /* MotorwayRandomTextUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,13 +186,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C65068429A04BF700BE48BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0C65068E29A04BF700BE48BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,15 +212,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0C65068C29A04BF700BE48BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0C65069729A04BF700BE48BC /* MotorwayRandomTextUITestsLaunchTests.swift in Sources */,
-				0C65069529A04BF700BE48BC /* MotorwayRandomTextUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,11 +219,6 @@
 			isa = PBXTargetDependency;
 			target = 0C65067429A04BF600BE48BC /* MotorwayRandomText */;
 			targetProxy = 0C65068729A04BF700BE48BC /* PBXContainerItemProxy */;
-		};
-		0C65069229A04BF700BE48BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0C65067429A04BF600BE48BC /* MotorwayRandomText */;
-			targetProxy = 0C65069129A04BF700BE48BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -522,48 +448,6 @@
 			};
 			name = Release;
 		};
-		0C6506A129A04BF700BE48BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nz.liambyrne.MotorwayRandomTextUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MotorwayRandomText;
-			};
-			name = Debug;
-		};
-		0C6506A229A04BF700BE48BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nz.liambyrne.MotorwayRandomTextUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MotorwayRandomText;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +474,6 @@
 			buildConfigurations = (
 				0C65069E29A04BF700BE48BC /* Debug */,
 				0C65069F29A04BF700BE48BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0C6506A029A04BF700BE48BC /* Build configuration list for PBXNativeTarget "MotorwayRandomTextUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0C6506A129A04BF700BE48BC /* Debug */,
-				0C6506A229A04BF700BE48BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
