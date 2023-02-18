@@ -10,7 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         RandomTextView(
-            viewModel: RandomTextViewModel()
+            // TODO: does this need to be provided in a neater way?
+            viewModel: RandomTextViewModel(
+                textRepository: TextRepository()
+            )
         )
     }
 }

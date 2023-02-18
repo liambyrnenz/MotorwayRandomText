@@ -10,28 +10,30 @@ import Foundation
 class RandomTextViewModel: ObservableObject {
     
     struct Configuration {
-        var characters: [Character] = [Character]("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 ")
         var maxCount: Int = 50
     }
     
     @Published var text: String = ""
     
-    private var configuration: Configuration
+    private let textRepository: TextRepositoryProtocol
     
-    internal init(configuration: RandomTextViewModel.Configuration? = nil) {
+    private(set) var configuration: Configuration
+    
+    internal init(textRepository: TextRepositoryProtocol, configuration: Configuration? = nil) {
+        self.textRepository = textRepository
         self.configuration = configuration ?? .init()
     }
     
     func updateRandomText() {
-        text = generateRandomText()
+        text = generateRandomWords()
     }
     
-    private func generateRandomText() -> String {
-        return String(
-            (0..<configuration.maxCount).map { _ in
-                configuration.characters.randomElement() ?? " " // if this fails for some reason, just fill the gap with a space
-            }
-        )
+    private func generateRandomWords() -> String {
+        let words = textRepository.words()
+        let randomWords = (0..<configuration.maxCount).map { _ in
+            words.randomElement() ?? " " // if this fails for some reason, just fill the gap with a space
+        }
+        return randomWords.joined(separator: " ")
     }
     
 }
