@@ -40,8 +40,7 @@ struct RandomTextView: View {
                     .padding()
             }
             .padding(.top)
-            // TODO: this needs to show word count, incl. added/removed
-            Text(Strings.RandomText.Dynamic.characterCount(viewModel.text.count))
+            Text(Strings.RandomText.Dynamic.wordCount(viewModel.wordCount))
                 .font(.caption)
                 .frame(maxWidth: .infinity, alignment: .trailing)
         }

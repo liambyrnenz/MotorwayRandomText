@@ -15,6 +15,10 @@ class RandomTextViewModel: ObservableObject {
     
     @Published var text: String = ""
     
+    var wordCount: Int {
+        text.split(separator: " ").count
+    }
+    
     private let textRepository: TextRepositoryProtocol
     
     private(set) var configuration: Configuration

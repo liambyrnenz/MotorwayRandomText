@@ -15,8 +15,8 @@ struct Strings {
         }
         
         struct Dynamic {
-            static let characterCount: (Int) -> String = { value in
-                let suffix = value == 1 ? "character" : "characters"
+            static let wordCount: (Int) -> String = { value in
+                let suffix = value == 1 ? "word" : "words"
                 return "\(value) \(suffix)"
             }
         }
