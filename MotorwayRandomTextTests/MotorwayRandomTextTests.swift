@@ -15,7 +15,9 @@ final class MotorwayRandomTextTests: XCTestCase {
     override func setUp() {
         mockTextRepository = MockTextRepository()
     }
-
+    
+    /// - Parameters:
+    ///   - words: mocked words list that the mock repository should return
     func createViewModel(words: [String], configuration: RandomTextViewModel.Configuration? = nil) -> RandomTextViewModel {
         mockTextRepository.wordsReturnValue = words
         return RandomTextViewModel(textRepository: mockTextRepository, configuration: configuration)
@@ -26,6 +28,8 @@ final class MotorwayRandomTextTests: XCTestCase {
 extension MotorwayRandomTextTests {
     
     func testViewModelBasic() {
+        // given one choice of word, the output should simply be the one word repeated as many times as the
+        // configuration specifies
         let viewModel = createViewModel(words: ["word"], configuration: RandomTextViewModel.Configuration(maxCount: 10))
         
         viewModel.updateRandomText()

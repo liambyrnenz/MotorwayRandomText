@@ -10,6 +10,7 @@ import SwiftUI
 struct RandomTextView: View {
     @StateObject var viewModel: RandomTextViewModel
     
+    /// The textual header components of the screen.
     var header: some View {
         VStack(alignment: .leading) {
             Text(Strings.RandomText.heading)
@@ -22,6 +23,7 @@ struct RandomTextView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
     }
     
+    /// The button used to generate random words into the field.
     var generateButton: some View {
         Button(Strings.RandomText.Actions.generate) {
             viewModel.updateRandomText()
@@ -30,6 +32,12 @@ struct RandomTextView: View {
 //        .tint(.black)
     }
     
+    /// The text field showing the generated random words, which allows users
+    /// to perform editing operations. This section also includes a counter
+    /// for the number of words in the field.
+    ///
+    /// This view uses a `TextEditor` for automatic multi-line and scrolling
+    /// support.
     var textArea: some View {
         VStack {
             ZStack {
