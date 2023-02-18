@@ -45,9 +45,14 @@ class RandomTextViewModel: ObservableObject {
     
     private func generateRandomWords() -> String {
         let words = textRepository.words()
+        if words.isEmpty {
+            return "" // do this, otherwise we get a string of spaces in the following code
+        }
+        
         let randomWords = (0..<configuration.maxCount).map { _ in
             words.randomElement() ?? " " // if this fails for some reason, just fill the gap with a space
         }
+        
         return randomWords.joined(separator: " ")
     }
     
