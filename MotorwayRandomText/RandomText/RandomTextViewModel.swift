@@ -26,7 +26,14 @@ class RandomTextViewModel: ObservableObject {
     }
     
     private func generateRandomText() -> String {
-        return "Random!"
+        // https://stackoverflow.com/questions/26845307/generate-random-alphanumeric-string-in-swift
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+//        let regex = #"[A-Za-z0-9 ]"#) // TODO: is regex faster? Use measure (performance test)
+        return String(
+            (0..<configuration.maxCount).map { _ in
+                letters.randomElement()! // TODO: should we force unwrap?
+            }
+        )
     }
     
 }
