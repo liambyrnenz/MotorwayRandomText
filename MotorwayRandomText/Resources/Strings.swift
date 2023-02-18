@@ -13,5 +13,12 @@ struct Strings {
         struct Actions {
             static let generate: String = "Generate"
         }
+        
+        struct Dynamic {
+            static let characterCount: (Int) -> String = { value in
+                let suffix = value == 1 ? "character" : "characters"
+                return "\(value) \(suffix)"
+            }
+        }
     }
 }

@@ -31,13 +31,18 @@ struct RandomTextView: View {
     }
     
     var textArea: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(.primary, lineWidth: 2)
-            TextEditor(text: $viewModel.text)
-                .padding()
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(.primary, lineWidth: 2)
+                TextEditor(text: $viewModel.text)
+                    .padding()
+            }
+            .padding(.top)
+            Text(Strings.RandomText.Dynamic.characterCount(viewModel.text.count))
+                .font(.caption)
+                .frame(maxWidth: .infinity, alignment: .trailing)
         }
-        .padding(.top)
     }
     
     var body: some View {
