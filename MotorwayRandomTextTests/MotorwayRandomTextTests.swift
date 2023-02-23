@@ -30,6 +30,7 @@ extension MotorwayRandomTextTests {
     func testViewModelGeneratingWords() {
         // given one choice of word, the output should simply be the one word repeated as many times as the
         // configuration specifies
+        // (if we have more words, the randomness kicks in and this becomes harder to test)
         let viewModel = createViewModel(words: ["word"], configuration: RandomTextViewModel.Configuration(maxCount: 10))
         
         viewModel.updateRandomText()
@@ -50,6 +51,10 @@ extension MotorwayRandomTextTests {
         let viewModel = createViewModel(words: ["word"], configuration: RandomTextViewModel.Configuration(maxCount: 10))
         
         viewModel.updateRandomText()
+        
+        viewModel.text.append(" some other words")
+        XCTAssertEqual(viewModel.wordCount, 13)
+        
         viewModel.text = "" // select all and delete
         XCTAssertEqual(viewModel.wordCount, 0)
     }
